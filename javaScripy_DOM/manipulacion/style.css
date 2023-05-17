@@ -1,0 +1,12 @@
+*{
+    margin: o;
+    padding: 0;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: bisque;
+    border-radius: 5px;
+}
