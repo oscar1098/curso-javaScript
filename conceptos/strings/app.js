@@ -21,6 +21,20 @@ console.log(cadena2);
 
 //INDEX OF
 
-
 let saludo = "Hola Mundo";
 console.log(saludo.indexOf('Mundo'));
+
+// SLICE
+
+let saludo2= "Hola-mundo";
+console.log(saludo2.slice(5));
+
+// REPLACE
+
+let hola = "Hola mundo";
+console.log(hola.replace("mundo","amigos"));
+
+// CARACTERES DE ESCAPE
+
+let mensaje = "El perro \"fue\" \na morder otro \tperro";
+console.log(mensaje);
