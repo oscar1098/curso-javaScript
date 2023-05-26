@@ -7,7 +7,7 @@ let array2 = new Array(1,2,true,null,'hola')
 console.log(array);
 console.log(array2);
 
-// MODIFICAR ARRAYS
+//! MODIFICAR ARRAYS
 
 console.log("\n\n------------------------------------MODIFICAR ARRAYS------------------------------------");
 
@@ -18,7 +18,7 @@ diaSemana[1] = 'Febrero'
 
 console.log(diaSemana);
 
-// OBTENER VALORES DE UN ARRAY
+//! OBTENER VALORES DE UN ARRAY
 
 console.log("\n\n------------------------------------OBTENER VALORES DE UN  ARRAY------------------------------------");
 
@@ -28,7 +28,7 @@ let miColeccion = [1, true, 'Hola mundo', mascotas,3,undefined]
 console.log(miColeccion);
 console.log(miColeccion[3][1]);
 
-// PUSH AGREGA ELEMENTOS AL FINAL DE UN ARRAY
+//! PUSH AGREGA ELEMENTOS AL FINAL DE UN ARRAY
 
 console.log("\n\n------------------------------------METODO PUSH------------------------------------");
 
@@ -36,28 +36,28 @@ let frutas = ['banana','pera']
 frutas.push('manzana','coco','melon');
 console.log(frutas);
 
-// POP ELIMINA EL ULTIMO ELEMENTO DE UN ARRAY
+//! POP ELIMINA EL ULTIMO ELEMENTO DE UN ARRAY
 
 console.log("\n\n------------------------------------METODO POP------------------------------------");
 
 frutas.pop();
 console.log(frutas);
 
-// UNSHIFT AGREGA AL PRINCIPIO
+//! UNSHIFT AGREGA AL PRINCIPIO
 
 console.log("\n\n------------------------------------METODO UNSHIFT------------------------------------");
 
 frutas.unshift('fresa','cereza');
 console.log(frutas);
 
-// SHIFT ELIMINA EL PRIMER ELEMENTO
+//! SHIFT ELIMINA EL PRIMER ELEMENTO
 
 console.log("\n\n------------------------------------METODO SHIFT------------------------------------");
 
 frutas.shift();
 console.log(frutas);
 
-// METODO CONCAT UNIR ARRAYS
+//! METODO CONCAT UNIR ARRAYS
 
 console.log("\n\n------------------------------------METODO CONCAT------------------------------------");
 
@@ -66,7 +66,7 @@ let arrayUnido = numeros.concat(frutas)
 
 console.log(arrayUnido);
 
-// METODO INCLUDES RETORNA UN BOLEANO SI EXISTE EL VALOR
+//! METODO INCLUDES RETORNA UN BOLEANO SI EXISTE EL VALOR
 
 console.log("\n\n------------------------------------METODO INCLUDES------------------------------------");
 
@@ -74,20 +74,20 @@ let nombres = ['marcos','jorge','luis','rodrigo','gaston','marcos','felipe']
 
 console.log(nombres.includes('marcos'));
 
-// METODO INDEXOF DEVUELVE EL INDICE
+//! METODO INDEXOF DEVUELVE EL INDICE
 
 console.log("\n\n------------------------------------METODO INDEXOF------------------------------------");
 
 console.log(nombres.indexOf('gaston')); 
 
-// METODO REVERSE INVIERTE EL ARRAY
+//! METODO REVERSE INVIERTE EL ARRAY
 
 console.log("\n\n------------------------------------METODO REVERSE------------------------------------");
 
 let arrayInvertido = nombres.reverse()
 console.log(arrayInvertido); 
 
-// METODO JOIN DEVUELVE UN STRING
+//! METODO JOIN DEVUELVE UN STRING
 console.log("\n\n------------------------------------METODO JOIN------------------------------------");
 
 console.log(numeros.join());
@@ -95,7 +95,7 @@ console.log(numeros.join(''));
 console.log(numeros.join(' '));
 console.log(numeros.join('/')); 
 
-// METODO SLICE DEVUELVE UNA PARTE DEL ARRAY
+//! METODO SLICE DEVUELVE UNA PARTE DEL ARRAY
 console.log("\n\n------------------------------------METODO SLICE------------------------------------");
 
 let animales = ['puma','tigre','pantera','leon','leopardo','cobra','boa','mamba'];
@@ -107,13 +107,13 @@ console.log(felinos);
 console.log(felinos2);
 console.log(felinos3);
 
-// METODO SORT ORDENA EL ARRAY ALFABETICAMENTE
+//! METODO SORT ORDENA EL ARRAY ALFABETICAMENTE
 console.log("\n\n------------------------------------METODO SORT------------------------------------");
 
 let animalesOrdenados = animales.sort();
 console.log(animalesOrdenados);
 
-// METODO SPLICE QUITAR-REMPLAZAR-AGREGAR NUEVOS ELEMENTOS AL ARRAY splice(index,borrar,agregar)
+//! METODO SPLICE QUITAR-REMPLAZAR-AGREGAR NUEVOS ELEMENTOS AL ARRAY splice(index,borrar,agregar)
 console.log("\n\n------------------------------------METODO SLICE------------------------------------");
 
 let agregarEnPosicion = animales;
@@ -127,7 +127,7 @@ console.log(agregarEnPosicion);
 agregarEnPosicion.splice(6,1)
 console.log(agregarEnPosicion);
 
-// PASO POR VALOR ÁSO POR REFERENCIA
+//! PASO POR VALOR ÁSO POR REFERENCIA
 console.log("\n\n------------------------------------PASO POR VALOR------------------------------------");
 
 const array5 = [1,2,3,4,5,6,7,8];
@@ -140,7 +140,7 @@ array6.pop()
 console.log(array5);
 console.log(array6);
 
-// METODO EVERY DETERMINA SI TODOS LOS VALORES EN EL ARRAY CUMPLEN UNA CONDICION. RETORNA BOLEANO
+//! METODO EVERY DETERMINA SI TODOS LOS VALORES EN EL ARRAY CUMPLEN UNA CONDICION. RETORNA BOLEANO
 console.log("\n\n------------------------------------METODO EVERY------------------------------------");
 
 const edades = [1,15,17,13,8]; // todos son menores a 18
@@ -153,7 +153,7 @@ console.log(resultado);
 let resul =  edades.every (cualquierCos => cualquierCos >= 18);
 console.log(resul);
 
-//FOR EACH
+//! FOR EACH
 console.log("\n\n------------------------------------FOR EACH------------------------------------");
 
 animales.forEach(valor => console.log(valor));
@@ -164,7 +164,7 @@ function retornaValores(valor,indice) {
 
 animales.forEach(retornaValores)
 
-//MAP
+//! MAP
 console.log("\n\n------------------------------------MAP------------------------------------");
 
 const numeros2 = [1,2,3,4,5,6];
