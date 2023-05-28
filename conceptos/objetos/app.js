@@ -48,5 +48,18 @@ console.log(`
 
 console.log(cliente01);
 
+//! OBJETO QUE NO SE PUEDE CAMBIAR
+
+Object.freeze( cliente01 );
+
+//! LISTAR PROPIEDADES 
+console.log('\n------------------------------------------LISTAR PROPIEDADES------------------------------------------\n');
+const propiedades = Object.getOwnPropertyNames(cliente01);
+console.log(propiedades);
+
+//! LISTAR VALORES 
+console.log('\n------------------------------------------LISTAR VALORES------------------------------------------\n');
+console.log(Object.values(cliente01));
+
 
 

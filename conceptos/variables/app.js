@@ -9,3 +9,4 @@ numero = 'texto';
 // No puede cambiar
 
 const diasSemana = 7;
+
