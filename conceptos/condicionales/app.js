@@ -1,11 +1,11 @@
-//IF
+//!IF
 if(true){
     console.log(`
     --------------------------------------------IF --------------------------------------------
     \nEstoy dentro del if`);
 }
 
-//ELSE
+//!ELSE
 if(false){
     console.log(`
     --------------------------------------------ELSE --------------------------------------------
@@ -16,7 +16,7 @@ if(false){
     \nEstoy dentro del else`);
 }
 
-//IF ELSE
+//!IF ELSE
 if(false){
     console.log(`
     --------------------------------------------IF ELSE --------------------------------------------
@@ -31,7 +31,7 @@ if(false){
     \nEstoy dentro del else`);
 }
 
-// SWITVH CASE
+//! SWITVH CASE
 
 switch (1) {
     case 1:
@@ -44,7 +44,7 @@ switch (1) {
         break;
 }
 
-// TERNARIO
+//! TERNARIO
 
 console.log("--------------------------------------------TERNARIO--------------------------------------------");
 let edad = 18;

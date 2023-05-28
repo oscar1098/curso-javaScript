@@ -79,8 +79,27 @@ function multiplicarPor(num){
 const miFuncion3 = multiplicarPor(5);
 console.log(miFuncion3(3));
 
+//! DESESTRUCTURAR ARGUMENTOS
 
+console.log("\n------------------------------------------DESECTRUCTURAR ARGUMENTOS------------------------------------------\n");
 
+const tony = {
+    nombre : 'Tony Stark',
+    codeName : 'Ironman',
+    vivo : false,
+    edad : 40,
+    trajes : ['MarkI','MArkV','Hulkbusterr']
+};
+
+const imprimePropiedades = ({nombre,codeName,vivo,edad,trajes}) =>{
+    console.log({nombre});
+    console.log({codeName});
+    console.log({vivo});
+    console.log({edad});
+    console.log({trajes});
+}
+
+imprimePropiedades(tony)
 
 //! EJERCICIO 1
 
