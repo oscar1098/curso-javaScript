@@ -127,7 +127,7 @@ console.log(agregarEnPosicion);
 agregarEnPosicion.splice(6,1)
 console.log(agregarEnPosicion);
 
-//! PASO POR VALOR ÁSO POR REFERENCIA
+//! PASO POR VALOR PASO POR REFERENCIA
 console.log("\n\n------------------------------------PASO POR VALOR------------------------------------");
 
 const array5 = [1,2,3,4,5,6,7,8];
