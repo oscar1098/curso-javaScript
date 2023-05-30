@@ -20,9 +20,9 @@ console.log(cadena2);
 
 
 //!INDEX OF
-
+console.log('index-------------------');
 let saludo = "Hola Mundo";
-console.log(saludo.indexOf('Mundo'));
+console.log(saludo.indexOf('45345'));
 
 //! SLICE
 
