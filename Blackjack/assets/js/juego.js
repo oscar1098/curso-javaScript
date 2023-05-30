@@ -66,6 +66,7 @@ const miModulo = (() => {
                 : valor * 1;
     }
 
+    
     // Turno: 0 = primer jugador y el último será la computadora
     const acumularPuntos = ( carta, turno ) => {
         puntosJugadores[turno] = puntosJugadores[turno] + valorCarta( carta );
