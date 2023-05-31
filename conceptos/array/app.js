@@ -1,8 +1,8 @@
 let cadena = 'Hola';
 let cadena2 = new String ('Hola mundo');
 
-let array = [1,true,null,'hola',8.56]
-let array2 = new Array(1,2,true,null,'hola')
+let array = [1,true,null,'hola',8.56];
+let array2 = new Array(1,2,true,null,'hola');
 
 console.log(array);
 console.log(array2);
@@ -11,8 +11,8 @@ console.log(array2);
 
 console.log("\n\n------------------------------------MODIFICAR ARRAYS------------------------------------");
 
-let diaSemana = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo']
-let arrayDos = new Array(1,2,true,null,'hola')
+let diaSemana = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo'];
+let arrayDos = new Array(1,2,true,null,'hola');
 
 diaSemana[1] = 'Febrero'
 
@@ -24,7 +24,7 @@ console.log("\n\n------------------------------------OBTENER VALORES DE UN  ARRA
 
 let mascotas = ['gato','perro','liebre','loro'];
 
-let miColeccion = [1, true, 'Hola mundo', mascotas,3,undefined]
+let miColeccion = [1, true, 'Hola mundo', mascotas,3,undefined];
 console.log(miColeccion);
 console.log(miColeccion[3][1]);
 
@@ -32,7 +32,7 @@ console.log(miColeccion[3][1]);
 
 console.log("\n\n------------------------------------METODO PUSH------------------------------------");
 
-let frutas = ['banana','pera']
+let frutas = ['banana','pera'];
 frutas.push('manzana','coco','melon');
 console.log(frutas);
 
@@ -62,7 +62,7 @@ console.log(frutas);
 console.log("\n\n------------------------------------METODO CONCAT------------------------------------");
 
 let numeros = [1,2,3,4,5,6,7,8,9];
-let arrayUnido = numeros.concat(frutas) 
+let arrayUnido = numeros.concat(frutas); 
 
 console.log(arrayUnido);
 
@@ -84,7 +84,7 @@ console.log(nombres.indexOf('gaston'));
 
 console.log("\n\n------------------------------------METODO REVERSE------------------------------------");
 
-let arrayInvertido = nombres.reverse()
+let arrayInvertido = nombres.reverse();
 console.log(arrayInvertido); 
 
 //! METODO JOIN DEVUELVE UN STRING
@@ -114,11 +114,11 @@ let animalesOrdenados = animales.sort();
 console.log(animalesOrdenados);
 
 //! METODO SPLICE QUITAR-REMPLAZAR-AGREGAR NUEVOS ELEMENTOS AL ARRAY splice(index,borrar,agregar)
-console.log("\n\n------------------------------------METODO SLICE------------------------------------");
+console.log("\n\n------------------------------------METODO SPLICE------------------------------------");
 
 let agregarEnPosicion = animales;
 
-agregarEnPosicion.splice(5,0,'piton')
+agregarEnPosicion.splice(5,0,'piton');
 console.log(agregarEnPosicion);
 
 agregarEnPosicion.splice(3,1,'Araña')
@@ -221,8 +221,29 @@ console.log( getHeroeByid(3) );
 //! FILTER
 console.log("\n\n------------------------------------fILTER------------------------------------");
 
-
 const getHeroesByOwner = ( owner ) => heroes.filter( heroe => heroe.owner ===  owner);
 
 console.log(getHeroesByOwner('Marvel'));
 
+//! ORDENAR UN ARREGLO NUMERICO
+console.log("\n\n------------------------------------SORT ARREGLO NUMERICO------------------------------------");
+const arr = [5, 2, 8, 1, 4];
+arr.sort((a, b) => a - b);
+console.log(arr); 
+
+//! OTRO USO DEL SORT 
+console.log("\n\n------------------------------------OTRO USO DEL SORT------------------------------------");
+const data = [ "Zaragoza", "madrid", "Barcelona"];
+data.sort ((a, b) =>
+    a.toLowerCase() > b.toLowerCase() ? 1 :
+    a.toLowerCase() < b.toLowerCase() ? -1:
+    0
+);
+console.log (data);
+
+//! LOCAL COMPARE 
+console.log("\n\n------------------------------------LOCAL COMPARE------------------------------------");
+
+const data2 = ["Zaragoza", "Ávila", "madrid", "Barcelona"];
+data2.sort((a, b) => a.localeCompare(b));
+console.log(data2);
